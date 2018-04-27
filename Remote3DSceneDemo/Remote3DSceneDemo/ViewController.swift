@@ -9,6 +9,9 @@
 import UIKit
 import SceneKit
 import ARKit
+import Alamofire
+import Zip
+
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
@@ -28,8 +31,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Set the scene to the view
         sceneView.scene = scene
+        
     }
     
+
+    func downloadZip() {
+        
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
