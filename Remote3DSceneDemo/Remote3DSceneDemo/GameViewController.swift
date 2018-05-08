@@ -81,6 +81,7 @@ class GameViewController: UIViewController {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         scnView.addGestureRecognizer(tapGesture)
         
+        
     }
     
     func downloadZip() {
