@@ -95,7 +95,7 @@ class GameViewController: UIViewController {
                 let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
                 let inputPath = documentDirectory.appendingPathComponent("artTest.scnassets.zip")
                 
-                print("--\(documentDirectory), --\(inputPath)")
+                print("-documentDirectory-\(documentDirectory), -inputPath-\(inputPath)")
                 do {
                     try Zip.unzipFile(inputPath, destination: documentDirectory, overwrite: true, password: nil)
                 } catch {
