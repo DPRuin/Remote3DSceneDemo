@@ -84,7 +84,7 @@ class GameViewController: UIViewController {
     
     func downloadZip() {
         // http://192.168.1.149/art.zip
-        print("downloadZip")
+        print("--downloadZip")
         // 下载zip
         let destination = DownloadRequest.suggestedDownloadDestination(for: .documentDirectory, in: .userDomainMask)
         
